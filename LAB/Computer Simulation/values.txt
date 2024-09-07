@@ -1,0 +1,7 @@
+Inventory Policy = (12, 3)
+Month = 2
+Holding Cost = 2
+Backlog Cost = 4
+Initial Level = 7
+Settup Cost = 50
+Increment Cost = 2

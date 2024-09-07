@@ -1,0 +1,160 @@
+/*#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int q;
+    cin>>q;
+    while(q--)
+    {
+        int n,i,res;
+        int f=1;
+        cin>>n;
+        for(int i=0;i<10;i++)
+        {
+           // cout<<n<<" << "<<i<<" = "<<(n<<i)<<endl;
+           // cout<<n<<" << "<<i<<" = "<<(n>>i)<<endl;
+           /*f=f<<i;
+           res=n&f;
+           if(res==0)cout<<"false"<<endl;
+           else cout<<"true"<<endl;
+           f=1;
+
+
+       }
+        int c=0;
+           while(n>0)
+           {
+               if((n&1)>0)c++;
+               n=n>>1;
+           }cout<<c<<endl;
+
+    }
+}
+/*#include<bits/stdc++.h>
+#include<utility>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        int b[n];
+       vector< pair<int ,int> > ans;
+       vector<int >v;
+       for(int i=0;i<n;i++)
+        {
+            cin>>b[i];
+            //if(b[i]!=1 && b[i]!=i+1)ans.push_back(make_pair(i+1,b[i]));
+        }
+        sort(b,b+n);
+        for(int i=1;i<n;i++)
+        {
+          if(b[i]==b[i-1])v.push_back(b[])
+        }
+    }
+}*/
+/*#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+ll M=32000;
+void seive(int n,vector<int> &prime)
+{
+
+    bool marked[M];
+    for(int i=1;i<=n;i++)marked[i]=true;
+    ///loop use na kore ata korlew partam------>
+    //memset(marked,true,sizeof(marked));
+       for(int i=2;i*i<=n;i++)
+    {
+        if(marked[i]==true)
+        {
+            v.push_back(i);
+            for(int j=i*i;j<=n;j+=i)marked[j]=false;
+        }
+
+    }
+    for(int p=2;p<=n;p++){if(marked[p])cout<<p<<" ";}
+}
+void primrng (int l, int h)
+{
+    int lim=floor(sqrt(h));
+    vector<int > prime;
+    seive(lim,prime);
+    int n=h-l+1;
+    bool marked[M];
+    memset(marked,true,sizeof(marked));
+    for(int i=0;i<prime.size();i++)
+}
+
+int main()
+{
+    int t; cin>>t; while(t--)
+    {
+        int n;
+        cin>>n;
+        seive(n);
+
+    }
+}
+
+
+
+*/
+
+
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int ar[1000001];
+int pp[1000001];
+void sieve()
+{
+    int maxN=1000000;
+    for(ll i=0;i<=maxN;i++)ar[i]=1;
+    ar[0]=0;
+    ar[1]=0;
+    for(ll i=2;i*i<=maxN;i++)
+    {
+        if(ar[i]==1)
+        {
+            for(ll j=i*i;j<=maxN;j+=i)ar[j]=0;
+        }
+    }
+    int cnt=0;
+    for(ll i=0;i<=maxN;i++)
+    {
+        if(ar[i]==1)cnt++;
+        if(ar[cnt==1])pp[i]=1;
+        else pp[i]=0;
+
+    }
+
+
+}
+main()
+{
+    sieve();
+    int l, r, t;
+    cin>>t;
+    while(t--)
+    {
+        cnt=0;
+        cin>>l>>r;
+        for(;l<=r;l++)
+        {
+          cnt+=pp[l];
+
+        }cout<<cnt<<endl;
+    }
+}
+
+
+
+
+
+
+
+

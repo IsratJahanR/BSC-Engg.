@@ -1,0 +1,2 @@
+No. of slices = 4
+Pancase sizes = 4 1 2 3
