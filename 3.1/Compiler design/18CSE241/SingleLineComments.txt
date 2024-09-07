@@ -1,0 +1,2 @@
+ Coune the prime number in a given range:
+Israt

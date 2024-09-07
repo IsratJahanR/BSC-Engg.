@@ -1,0 +1,28 @@
+/*      
+This is source Code.
+This is double line comment.
+*/
+
+//This is single line comment.
+
+#include<bits/stdc++.h>
+
+
+using namespace std;
+
+int main()
+{
+    
+   int a,b,c;
+   float p,q,r;
+   double d,e,f;
+   a=3;
+   b=3;
+   p=3.9;
+   double pi = 3.1416;
+   if(a==b)cout<<"a and b are equal"<<endl;
+
+
+   
+   
+}

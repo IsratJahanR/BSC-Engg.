@@ -1,0 +1,11 @@
+cnt
+f1
+f2
+f3
+false
+i
+n
+num
+num2
+pi
+prime
