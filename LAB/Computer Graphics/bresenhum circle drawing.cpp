@@ -4,7 +4,7 @@
 
 using namespace std;
 
-
+//circle
 void  draw(int xc,int yc,int x,int y)
 {
     putpixel(x+xc,y+yc,RED);
